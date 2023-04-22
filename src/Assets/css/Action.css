@@ -1,0 +1,23 @@
+.button {
+  width: 78px;
+  height: 23px;
+  border-radius: 3px;
+  border-style: none;
+  font-weight: 500;
+  font-size: 11px;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.invited {
+  background: #6200ee;
+}
+
+.not_invited {
+  background: #e21926;
+}
+
+.unknown__action {
+  background-color: #e21926;
+}

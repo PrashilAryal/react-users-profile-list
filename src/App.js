@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Data from "../src/Data.json";
+import ListHeading from "./Components/List_Heading";
+import Username from "./Components/Username";
+import Position from "./Components/Position";
+import Status from "./Components/Status";
+import Download from "./Components/Download";
+import Action from "./Components/Action";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <ListHeading></ListHeading>
+
+      {Data.users.map((user) => (
+        <div className="user__list">
+          <input type="checkbox"></input>
+          <Username full_name={user.full_name}></Username>
+          <Position designation={user.designation}></Position>
+          <Status status={user.active_status}></Status>
+          <Download
+            download_total={user.download_completed_rate.total}
+            download_complete={user.download_completed_rate.completed}
+            download_size={user.download_completed_rate.size_type}
+          ></Download>
+
+          <Action action={user.invited_status}></Action>
+        </div>
+      ))}
     </div>
   );
 }

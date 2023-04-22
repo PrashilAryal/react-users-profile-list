@@ -1,0 +1,35 @@
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 22px;
+}
+
+.username__full-name {
+  width: 130px;
+  height: 19px;
+}
+
+.username__full-name p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.username__first-letter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 29px;
+  height: 29px;
+  background: #6200ee;
+  padding: 3px;
+  border-radius: 50%;
+}
+.username__first-letter p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
