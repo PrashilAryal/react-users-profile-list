@@ -12,15 +12,17 @@ function Action({ action }) {
     actionData = "Unknown";
   }
   return (
-    <button
-      disabled={action ? false : true}
-      onClick={() => {}}
-      className={
-        actionClass ? `${actionClass} button` : "unknown__action button"
-      }
-    >
-      {actionData}
-    </button>
+    <td>
+      <button
+        disabled={action ? false : true}
+        onClick={() => {}}
+        className={
+          actionClass ? `${actionClass} button` : "unknown__action button"
+        }
+      >
+        {actionData}
+      </button>
+    </td>
   );
 }
 export default Action;

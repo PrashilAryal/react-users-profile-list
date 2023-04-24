@@ -1,40 +1,43 @@
-p {
-  color: white;
+.status {
+  width: 60px;
+  height: 17px;
+  border-radius: 9px;
+  display: flex;
 }
 
 .active {
   background-color: #19e26a;
-  padding: 2px 14px;
-  border-radius: 9px;
+  color: white;
+  width: 60px;
+  height: 17px;
   font-weight: 600;
   font-size: 11px;
-  margin-left: 10px;
-  line-height: 13px;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
   letter-spacing: 0.15px;
-  color: #ffffff;
 }
 .blocked {
   background-color: #e21926;
-  padding: 2px 14px;
-  margin-left: 10px;
-  border-radius: 9px;
+  color: white;
   font-weight: 600;
   font-size: 11px;
-  line-height: 13px;
+  width: 60px;
+  height: 17px;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
   letter-spacing: 0.15px;
-  color: #ffffff;
 }
 .in_active {
   background-color: #b1b1b1;
-  padding: 2px 14px;
-  margin-left: 10px;
-  border-radius: 9px;
+  color: white;
   font-weight: 600;
   font-size: 11px;
-  line-height: 13px;
+  width: 60px;
+  height: 17px;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
   letter-spacing: 0.15px;
-  color: #ffffff;
-}
-.unknown__status {
-  background-color: #b1b1b1;
 }

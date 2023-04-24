@@ -8,25 +8,3 @@
   justify-content: center;
   text-align: center;
 }
-
-.list__heading p {
-  font-size: 12px;
-  line-height: 13px;
-  color: black;
-  font-weight: 500;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.name {
-  margin-left: 20px;
-}
-.position {
-  margin-left: 90px;
-}
-.status {
-  margin-left: 0px;
-}
-.progress {
-  margin-left: 20px;
-  margin-right: 80px;
-}

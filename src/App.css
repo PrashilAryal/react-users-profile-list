@@ -5,12 +5,52 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+.body {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
 
 .user__list {
   display: flex;
   align-items: center;
-  text-align: left;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 700px;
   height: 47px;
   background-color: white;
+  padding: 10px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  width: 700px;
+  text-align: left;
+  letter-spacing: 0.15px;
+}
+thead {
+  height: 47px;
+  font-weight: 500;
+  font-size: 11px;
+  margin-bottom: 16px;
+}
+tbody > tr {
+  margin-top: 600px;
+}
+tbody {
+  margin-top: 16px;
+}
+th,
+td {
+  background-color: #ffffff;
+}
+thead th:first-child {
+  padding-left: 85px;
+}
+tbody td {
+  height: 56px;
 }

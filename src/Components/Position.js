@@ -3,11 +3,13 @@ import "../Assets/css/Position.css";
 
 function Position({ designation }) {
   return (
-    <div className="position__container">
-      <h1 className="position__container__designation">
-        {designation ? designation : "Null"}
-      </h1>
-    </div>
+    <td className="user-position">
+      <div className="position__container">
+        <h1 className="position__container__designation">
+          {designation ? designation : "Null"}
+        </h1>
+      </div>
+    </td>
   );
 }
 
